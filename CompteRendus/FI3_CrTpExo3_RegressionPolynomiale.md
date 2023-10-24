@@ -1,7 +1,7 @@
 _Antonin Durand_ <br>
 _FI3_
 
-<h1 style='text-align:left; color:#fd441c'> Exercie 3 : régression polynômiale </h1>
+<h1 style='text-align:left; color:#fd441c'> Exercie 4 : régression polynômiale </h1>
 
 L'objectif de cet exercice est d'utiliser un modèle de régression polynômiale pour prédire les étiquettes d'un dataset aléatoire.
 
