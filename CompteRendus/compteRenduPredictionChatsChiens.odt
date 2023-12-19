@@ -3,6 +3,9 @@ INFI3
 
 Compte rendu mini projet Perceptron avec images
 
+Le lien GITHUB du projet avec les data set d'entraînement et de test, le fichier python contenant le Perceptron :
+https://github.com/DurandAntonin/ProgrammationAvanceeFI3/tree/master/src/TP/predictionsChatsChiens
+
 L'objectif de ce projet est de de créer un réseau de neurones simple, d'entraîner le modèle pour qu'il puisse prédire la classe de l'image qu'on lui donne.
 Les images que nous allons utilisées sont des images de chats ou de chiens. Le but est de prédire si une image contient un chat (dans ce cas le label associé à cette dernière est de 1), sinon elle contient un chien, et le label associé à cette dernière vaudra 0.
 Pour ce faire, j'ai utilisé le site Kaggle, qui fournit de nombreux jeux de données, notamment des jeux de données pour la classification d'images où chacune contient un chat ou un chien.
@@ -17,6 +20,16 @@ Puis, on enregistre l'image transformée en matrice dans une liste 'x', et le lab
 Enfin, après avoir traité 1000 images par exemple, de taille 64 par 64 pixels, la matrice x aura la forme (1000,64,64,1) et la matrice y aura la forme (1000,).
 Il ne nous reste plus qu'à enregistrer ces 2 matrices dans un fichier spécial de type hdf5. Ce format permet de sauvegarder et de structurer d'importantes données, et permet dans notre cas de pouvoir stocker sous forme de matrices de nombreuses images ainsi que leur label, et de pouvoir les récupérer sans avoir à les retransformer en matrices à chaque fois si on veut entraîner le modèle plusieurs fois.
 Nous allons convertir chaque image en matrice qui sera stockée dans une matrice 'x', puis la prédiction associée à chacune de ces dernières sera stockée dans une matrice 'y'.
+Ci-dessous représente 10 échantillons de notre dataset d'entraînement ainsi que leur label.
+
+
+
+
+
+
+
+
+
 
 La troisième étape est le choix du modèle, dans notre cas nous allons utiliser un modèle de neurones artificiels simple avec uniquement 1 seul neurone. La fonction d'activation de ce dernier sera ainsi la prédiction de l'image sous forme de matrice.
 
@@ -34,6 +47,6 @@ Une des possibilités pour améliorer l'efficacité de notre modèle serait d'ajoute
 
 On affiche ensuite la matrice de confusion de notre modèle
 
-
-
 Comme pistes d'améliorations, on pourrait vérifier si les différents images de notre dataset d'entraînement sont correctes et non pas hors contextes. On pourrait aussi créer un réseau de neurones plus complexe, en ajoutant 1 neurone et/ou une couche en plus par exemple.
+
+
